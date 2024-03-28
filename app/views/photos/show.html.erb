@@ -1,0 +1,4 @@
+<%= form_with(url: photos_url , method: "post", local: true, html: {multipart: true}) do |form| %>
+  <%= form.file_field :picture %>
+  <%= form.submit %>
+<% end %>
