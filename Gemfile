@@ -26,6 +26,13 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# 添加配置
+gem 'figaro'
+
+#  腾讯的ocrSDK依赖添加
+gem 'tencentcloud-sdk-common', '~> 1.0.0'
+gem 'tencentcloud-sdk-ocr'
+
 # Use Redis adapter to run Action Cable in production
 gem "redis", ">= 4.0.1"
 
