@@ -29,7 +29,9 @@ class PhotosController < ApplicationController
         # )
         resq=AdvertiseOCRRequest.new(encoded_image,nil)  # Example: call the `GeneralBasicOCR` API
         response = cli.GeneralBasicOCR(resq)
-        puts response.to_json
+         response.TextDetections.each do |context|
+           puts context.DetectedText
+         end
         # req = DescribeInstancesRequest.new(nil, nil, 0, 1)
         # cli.DescribeInstances(req)
       rescue TencentCloudSDKException => e

@@ -26,6 +26,9 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# 配置bootstrap
+gem 'bootstrap', '~> 5.2.3'
+
 # 添加配置
 gem 'figaro'
 
